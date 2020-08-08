@@ -1,0 +1,63 @@
+{
+    "tableConfig": {
+        "paymentEnabled": true,
+        "adjustEnabled": true,
+        "columns": [
+            {
+                "fieldName": "invoiceDate",
+                "displayName": "invoiceDate",
+                "display": true,
+                "filteringEnabled": false,
+                "sortingEnabled": true
+            },
+            {
+                "fieldName": "vendorId",
+                "displayName": "Vendor ID",
+                "display": true,
+                "filteringEnabled": true,
+                "sortingEnabled": true
+            },       
+            {
+                "fieldName": "invoiceId",
+                "displayName": "invoice ID",
+                "display": true,
+                "filteringEnabled": false,
+                "sortingEnabled": true
+            },
+            {
+                "fieldName": "product",
+                "displayName": "product",
+                "display": true,
+                "filteringEnabled": false,
+                "sortingEnabled": true
+            },
+            {
+                "fieldName": "quantity",
+                "displayName": "quantity",
+                "display": true,
+                "filteringEnabled": false,
+                "sortingEnabled": true
+            },
+            {
+                "fieldName": "amountBal",
+                "displayName": "amountBal",
+                "display": true,
+                "filteringEnabled": false,
+                "sortingEnabled": true
+            },
+            {
+                "fieldName": "amountDue",
+                "displayName": "amountDue",
+                "display": true,
+                "filteringEnabled": false,
+                "sortingEnabled": true
+            }
+        ]
+    },
+    "dataEndPoints": {
+        "call2": "http://localhost:3000/data/invoices",
+        "call3": "http://localhost:3000/data/vendors",
+        "creditPost": "http://localhost:3000/creditPost",
+        "paymentPost": "http://localhost:3000/paymentPost"
+    }
+}
